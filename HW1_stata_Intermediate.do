@@ -15,7 +15,7 @@ qui {
 	    global workdir "`c(pwd)'/"
 	}
 	capture log close
-	log using ${workdir}simulation.log, replace 
+	log using "${workdir}simulation.log", replace 
 	set seed 340600
 	set obs 37706
 	}
